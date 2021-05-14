@@ -1,0 +1,18 @@
+{
+  "title": "4lch4's Blog",
+  "author": "4lch4",
+  "headerTitle": "4lch4's Blog",
+  "description": "My \"official\" blog that'll serve as a collection of my thoughts, guides, etc.",
+  "language": "en-us",
+  "siteUrl": "https://4lch4.blog",
+  "siteRepo": "https://github.com/4lch4/blog",
+  "image": "/static/images/avatar.png",
+  "socialBanner": "/static/images/twitter-card.png",
+  "email": "hey@4lch4.email",
+  "github": "https://github.com/4lch4",
+  "twitter": "https://twitter.com/4lch4",
+  "facebook": "https://facebook.com/4lch4",
+  "youtube": "https://youtube.com",
+  "linkedin": "https://www.linkedin.com",
+  "locale": "en-US"
+}
