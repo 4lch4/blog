@@ -1,10 +1,10 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What is you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
+    title: 'Knowledge Base',
+    description: `I created a website to serve as a collection of my "shared
+    knowledge". At the time of writing, this includes TIL snippets, cheatsheets,
+    interesting articles I found online, etc.`,
+    imgSrc: '/static/images/kba-logo.svg',
     href: 'https://www.google.com'
   },
   {
