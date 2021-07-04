@@ -27,10 +27,10 @@ export default function About() {
               {siteMetadata.author}
             </h3>
             <div className="text-gray-500 dark:text-gray-400">
-              Professor of Atmospheric Science
+              Operations Engineer III
             </div>
             <div className="text-gray-500 dark:text-gray-400">
-              Stanford University
+              J.B. Hunt Transportation
             </div>
             <div className="flex pt-6 space-x-3">
               <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
@@ -43,21 +43,25 @@ export default function About() {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>
-              Tails Azimuth is a professor of atmospheric sciences at the
-              Stanford AI Lab. His research interests includes complexity
-              modelling of tailwinds, headwinds and crosswinds.
+              Heyo, my real name is Devin W. Leaman and I go by 4lch4 (Al-kuh)
+              nearly everywhere online. In the odd case it's taken, I tend to go
+              with 4lch4z or Alchaz if need be.
             </p>
             <p>
-              He leads the clean energy group which develops 3D air
-              pollution-climate models, writes differential equation solvers,
-              and manufactures titanium plated air ballons. In his free time he
-              bakes raspberry pi.
+              I'm just some dude who likes making and fixing things that usually
+              involve a mouse and/or keyboard.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-              elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin
-              eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet.
-              Duis dapibus diam vel metus tempus vulputate.
+              My full-time gig is as a NOC Engineer/Operations Engineer at J.B.
+              Hunt Transportation. I started there in January/February of 2019
+              as a contractor and converted to full time in February of 2020,
+              just before COVID really took America by storm.
+            </p>
+            <p>
+              I started writing code back in high school when a teacher of mine
+              used VisualBasic programming to teach GIS related topics. After
+              falling in love with it, I went to college in Fort Smith, AR and
+              got a bachelor's in <b>Information Technology - Programming</b>.
             </p>
           </div>
         </div>
