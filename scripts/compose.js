@@ -26,6 +26,6 @@ images: []
 ---
 `
 
-fs.writeFile(`data/blog/${fileName}.${ext}`, frontMatter, err => {
+fs.writeFile(`data/posts/${fileName}.${ext}`, frontMatter, err => {
   if (err) throw err
 })

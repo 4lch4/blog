@@ -6,10 +6,10 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 
 const editUrl = fileName =>
-  `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+  `${siteMetadata.siteRepo}/blob/master/data/entries/${fileName}`
 const discussUrl = slug =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
+    `${siteMetadata.siteUrl}/entries/${slug}`
   )}`
 
 const postDateTemplate = {
@@ -25,7 +25,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
   return (
     <SectionContainer>
       <BlogSeo
-        url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`}
+        url={`${siteMetadata.siteUrl}/entries/${frontMatter.slug}`}
         {...frontMatter}
       />
       <article>
@@ -120,7 +120,9 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                           Previous Article
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
+                          <Link href={`/entries/${prev.slug}`}>
+                            {prev.title}
+                          </Link>
                         </div>
                       </div>
                     )}
@@ -130,7 +132,9 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                           Next Article
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
+                          <Link href={`/entries/${next.slug}`}>
+                            {next.title}
+                          </Link>
                         </div>
                       </div>
                     )}
@@ -139,10 +143,10 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               </div>
               <div className="pt-4 xl:pt-8">
                 <Link
-                  href="/blog"
+                  href="/entries"
                   className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                 >
-                  &larr; Back to the blog
+                  &larr; Back to the entries
                 </Link>
               </div>
             </footer>
