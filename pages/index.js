@@ -8,7 +8,7 @@ const MAX_DISPLAY = 5
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('posts')
+  const posts = await getAllFilesFrontMatter('entries')
 
   return { props: { posts } }
 }
@@ -31,7 +31,7 @@ export default function Home({ posts }) {
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
+          {!posts.length && 'No entries found.'}
           {posts.slice(0, MAX_DISPLAY).map(frontMatter => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
@@ -54,7 +54,7 @@ export default function Home({ posts }) {
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
                             <Link
-                              href={`/posts/${slug}`}
+                              href={`/entries/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
                             >
                               {title}
@@ -72,7 +72,7 @@ export default function Home({ posts }) {
                       </div>
                       <div className="text-base font-medium leading-6">
                         <Link
-                          href={`/posts/${slug}`}
+                          href={`/entries/${slug}`}
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                           aria-label={`Read "${title}"`}
                         >
@@ -90,11 +90,11 @@ export default function Home({ posts }) {
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
-            href="/posts"
+            href="/entries"
             className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
-            aria-label="all posts"
+            aria-label="all entries"
           >
-            All Posts &rarr;
+            All Entries &rarr;
           </Link>
         </div>
       )}

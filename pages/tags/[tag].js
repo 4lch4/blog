@@ -11,7 +11,7 @@ import path from 'path'
 const root = process.cwd()
 
 export async function getStaticPaths() {
-  const tags = await getAllTags('posts')
+  const tags = await getAllTags('entries')
 
   return {
     paths: Object.keys(tags).map(tag => ({
@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const allPosts = await getAllFilesFrontMatter('posts')
+  const allPosts = await getAllFilesFrontMatter('entries')
   const filteredPosts = allPosts.filter(
     post =>
       post.draft !== true &&

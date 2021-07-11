@@ -12,7 +12,7 @@ import {
 } from '@/lib/mdx'
 
 export async function getStaticPaths() {
-  const posts = getFiles('posts')
+  const posts = getFiles('entries')
   return {
     paths: posts.map(p => ({
       params: {
@@ -24,13 +24,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const allPosts = await getAllFilesFrontMatter('posts')
+  const allPosts = await getAllFilesFrontMatter('entries')
   const postIndex = allPosts.findIndex(
     post => formatSlug(post.slug) === params.slug.join('/')
   )
   const prev = allPosts[postIndex + 1] || null
   const next = allPosts[postIndex - 1] || null
-  const post = await getFileBySlug('posts', params.slug)
+  const post = await getFileBySlug('entries', params.slug)
 
   // rss
   const rss = generateRss(allPosts)

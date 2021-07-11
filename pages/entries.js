@@ -4,7 +4,7 @@ import ListLayout from '@/layouts/ListLayout'
 import { PageSeo } from '@/components/SEO'
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('posts')
+  const posts = await getAllFilesFrontMatter('entries')
 
   return { props: { posts } }
 }
@@ -15,9 +15,9 @@ export default function Post({ posts }) {
       <PageSeo
         title={`Blog - ${siteMetadata.author}`}
         description={siteMetadata.description}
-        url={`${siteMetadata.siteUrl}/posts`}
+        url={`${siteMetadata.siteUrl}/entries`}
       />
-      <ListLayout posts={posts} title="All Posts" />
+      <ListLayout posts={posts} title="All Entries" />
     </>
   )
 }
