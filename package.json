@@ -1,6 +1,6 @@
 {
   "name": "@4lch4/blog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My \"official\" blog that'll serve as a collection of my thoughts, guides, etc.",
   "private": true,
   "scripts": {
