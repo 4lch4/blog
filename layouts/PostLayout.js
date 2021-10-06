@@ -6,26 +6,29 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 
 const editUrl = fileName =>
-  `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+  `${siteMetadata.siteRepo}/blob/master/data/entries/${fileName}`
 const discussUrl = slug =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
+    `${siteMetadata.siteUrl}/entries/${slug}`
   )}`
 
 const postDateTemplate = {
   weekday: 'long',
   year: 'numeric',
   month: 'long',
-  day: 'numeric'
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  hour12: false
 }
 
 export default function PostLayout({ children, frontMatter, next, prev }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, publish_date, create_date, title, tags } = frontMatter
 
   return (
     <SectionContainer>
       <BlogSeo
-        url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`}
+        url={`${siteMetadata.siteUrl}/entries/${frontMatter.slug}`}
         {...frontMatter}
       />
       <article>
@@ -34,10 +37,10 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             <div className="space-y-1 text-center">
               <dl className="space-y-10">
                 <div>
-                  <dt className="sr-only">Published on</dt>
+                  <dt>Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(
+                    <time dateTime={publish_date}>
+                      {new Date(publish_date).toLocaleDateString(
                         siteMetadata.locale,
                         postDateTemplate
                       )}
@@ -120,7 +123,9 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                           Previous Article
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
+                          <Link href={`/entries/${prev.slug}`}>
+                            {prev.title}
+                          </Link>
                         </div>
                       </div>
                     )}
@@ -130,7 +135,9 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                           Next Article
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
+                          <Link href={`/entries/${next.slug}`}>
+                            {next.title}
+                          </Link>
                         </div>
                       </div>
                     )}
@@ -139,10 +146,10 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               </div>
               <div className="pt-4 xl:pt-8">
                 <Link
-                  href="/blog"
+                  href="/entries"
                   className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                 >
-                  &larr; Back to the blog
+                  &larr; Back to the entries
                 </Link>
               </div>
             </footer>

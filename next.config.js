@@ -8,6 +8,9 @@ module.exports = withBundleAnalyzer({
   future: {
     webpack5: true
   },
+  images: {
+    domains: ['images.4lch4.cloud']
+  },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,

@@ -52,16 +52,17 @@ export default function About() {
               involve a mouse and/or keyboard.
             </p>
             <p>
+              I started writing code back in high school when a teacher of mine
+              (<b>Yui Shin</b>) used VisualBasic programming to teach GIS
+              related topics. After falling in love with it, I went to college
+              in Fort Smith, AR and got a bachelor's in{' '}
+              <b>Information Technology - Programming</b>.
+            </p>
+            <p>
               My full-time gig is as a NOC Engineer/Operations Engineer at J.B.
               Hunt Transportation. I started there in January/February of 2019
               as a contractor and converted to full time in February of 2020,
               just before COVID really took America by storm.
-            </p>
-            <p>
-              I started writing code back in high school when a teacher of mine
-              used VisualBasic programming to teach GIS related topics. After
-              falling in love with it, I went to college in Fort Smith, AR and
-              got a bachelor's in <b>Information Technology - Programming</b>.
             </p>
           </div>
         </div>
