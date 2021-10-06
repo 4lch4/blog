@@ -10,14 +10,15 @@ date: '2021-10-06 09:42:12'
 author: 4lch4
 slug: dont-rebuild-docker-locally
 tags:
-  - TypeScript
-  - Node.js
-  - JavaScript
   - Productivity
   - Docker
+  - Learning
+  - Enhancements
+  - Tips
+  - Development
 ---
 
-A few weeks ago, I came across [this article][OG-Article] titled "You Don't Need to Rebuild Your Development Docker Image on Every Code Change." As I use Docker for most of my projects, this piqued my interest. The gist of it is, you can mount your local development directory to a Docker image instead of copying your source code to the image and building it.
+A few weeks ago, I came across [this article][og-article] titled "You Don't Need to Rebuild Your Development Docker Image on Every Code Change." As I use Docker for most of my projects, this piqued my interest. The gist of it is, you can mount your local development directory to a Docker image instead of copying your source code to the image and building it.
 
 While you wouldn't want to do this for anything other than local development, it does help _drastically_ with making changes and seeing them reflect as quickly as possible.
 
@@ -32,7 +33,7 @@ To properly discuss this new method, there's a few words/phrases that are helpfu
 
 ## Example
 
-I have an API called [Ansel][Ansel-Repo] that serves as a gateway to images I have stored in a DigitalOcean Spaces bucket. It's written in TypeScript and relatively lightweight, so doing a complete build of my Docker image takes just under 50 seconds. I'll use this repo to demonstrate just how much faster it can be.
+I have an API called [Ansel][ansel-repo] that serves as a gateway to images I have stored in a DigitalOcean Spaces bucket. It's written in TypeScript and relatively lightweight, so doing a complete build of my Docker image takes just under 50 seconds. I'll use this repo to demonstrate just how much faster it can be.
 
 ### Initial Dockerfile
 
@@ -193,8 +194,8 @@ The source, in this case, is the current directory since this command is run fro
 
 The target is where Docker will mount your files within the container. If you remember, in our Dockerfile, we use `WORKDIR /usr/src/app`, so we want to make sure our code/directory is mounted to the exact location. Because of this, we set the target value to `/usr/src/app`, so don't forget to make sure this lines up with your Dockerfile.
 
-If you have any questions or suggestions, please don't hesitate to reach out! You can find me on several sites, all of which I link to on my [socials site][Socials-Site].
+If you have any questions or suggestions, please don't hesitate to reach out! You can find me on several sites, all of which I link to on my [socials site][socials-site].
 
-[OG-Article]: https://vsupalov.com/rebuilding-docker-image-development/
-[Ansel-Repo]: https://github.com/4lch4/Ansel
-[Socials-Site]: https://4lch4.social
+[og-article]: https://vsupalov.com/rebuilding-docker-image-development/
+[ansel-repo]: https://github.com/4lch4/Ansel
+[socials-site]: https://4lch4.social
