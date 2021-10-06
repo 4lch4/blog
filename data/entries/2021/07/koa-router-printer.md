@@ -1,7 +1,7 @@
 ---
 title: Koa Router Printer NPM Module
 summary: A brief overview/explanation of my new NPM module that displays the registered routes of an API using Koa.
-date: '2021-07-04 03:25:03'
+publishDate: '2021-07-04T08:25:03Z'
 author: 4lch4
 tags:
   - NPM

@@ -23,7 +23,7 @@ const postDateTemplate = {
 }
 
 export default function PostLayout({ children, frontMatter, next, prev }) {
-  const { slug, fileName, publish_date, create_date, title, tags } = frontMatter
+  const { slug, fileName, publishDate, createDate, title, tags } = frontMatter
 
   return (
     <SectionContainer>
@@ -39,8 +39,8 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                 <div>
                   <dt>Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={publish_date}>
-                      {new Date(publish_date).toLocaleDateString(
+                    <time dateTime={publishDate}>
+                      {new Date(publishDate).toLocaleDateString(
                         siteMetadata.locale,
                         postDateTemplate
                       )}

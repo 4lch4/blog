@@ -1,6 +1,6 @@
 ---
 title: Solving the FizzBuzz Problem in PowerShell
-date: '2018-08-07'
+publishDate: '2018-08-07'
 tags: ['PowerShell', 'Tips', 'Interviews', 'FizzBuzz']
 summary: A simple solution to the standard Fizz Buzz interview question.
 images: ['/static/images/posts/FizzBuzz.png']

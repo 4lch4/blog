@@ -40,7 +40,13 @@ export default function Home({ posts }) {
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No entries found.'}
           {posts.slice(0, MAX_DISPLAY).map(frontMatter => {
-            const { slug, date, title, summary, tags } = frontMatter
+            const {
+              slug,
+              publishDate,
+              title,
+              summary,
+              tags
+            } = frontMatter
             return (
               <li key={slug} className="py-12">
                 <article>
@@ -48,8 +54,8 @@ export default function Home({ posts }) {
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>
-                          {new Date(date).toLocaleDateString(
+                        <time dateTime={publishDate}>
+                          {new Date(publishDate).toLocaleDateString(
                             siteMetadata.locale,
                             postDateTemplate
                           )}

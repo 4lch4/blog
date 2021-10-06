@@ -50,14 +50,14 @@ export const PageSeo = ({ title, description, url }) => {
 export const BlogSeo = ({
   title,
   summary,
-  date,
-  lastmod,
+  publishDate,
+  modifiedDate,
   url,
   tags,
   images = []
 }) => {
-  const publishedAt = new Date(date).toISOString()
-  const modifiedAt = new Date(lastmod || date).toISOString()
+  const publishedAt = new Date(publishDate).toISOString()
+  const modifiedAt = new Date(modifiedDate || publishDate).toISOString()
   let imagesArr =
     images.length === 0
       ? [siteMetadata.socialBanner]

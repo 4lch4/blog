@@ -1,6 +1,6 @@
 ---
 title: Hello World in PowerShell
-date: '2018-05-31'
+publishDate: '2018-05-31'
 tags: ['PowerShell', 'Beginner', 'Learning']
 summary: A brief look at PowerShell and a Hello World script.
 ---

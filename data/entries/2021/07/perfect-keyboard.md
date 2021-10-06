@@ -4,7 +4,7 @@ summary: A look into how I customized my ZSA Moonlander keyboard.
 images:
   - /static/images/posts/Moonlander/16-lifestyle-shot.jpeg
   - /static/images/posts/Moonlander/moonlander-logo.png
-date: '2021-07-04 05:03:01'
+publishDate: '2021-07-04T10:03:01Z'
 author: 4lch4
 tags:
   - ZSA

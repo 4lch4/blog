@@ -3,7 +3,6 @@ title: How To Create Your Own Digital Garden w/ Docusaurus
 summary: 'How to use Docusaurus, GitHub, and Vercel to create your own Digital Garden.'
 images:
   - ''
-date: '2021-07-06 15:38:23'
 createdDate: '2021-07-06 15:38:23'
 modifiedDate: '2021-08-28 @ 11:08:29'
 publish_date: '2021-07-25 11:06:23'

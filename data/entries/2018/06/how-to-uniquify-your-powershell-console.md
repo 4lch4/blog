@@ -1,6 +1,6 @@
 ---
 title: How to Uniquify Your PowerShell Console
-date: '2018-06-03'
+publishDate: '2018-06-03T00:00:00Z'
 tags: ['PowerShell', 'PowerShell-Profile', 'Tips', 'Enhancements']
 summary: A few tips to help make your PowerShell console "unique" in its own right.
 images: []
