@@ -1,10 +1,16 @@
 ---
 title: Koa Router Printer NPM Module
-summary: 'A brief overview/explanation of my new NPM module that displays the registered routes of an API using Koa.'
-# images: ['']
+summary: A brief overview/explanation of my new NPM module that displays the registered routes of an API using Koa.
 date: '2021-07-04 03:25:03'
 author: 4lch4
-tags: ['NPM', 'Node.js', 'TypeScript', 'Koa', 'Koa-Router', '@koa/router']
+tags:
+  - NPM
+  - Node.js
+  - TypeScript
+  - Koa
+  - Koa-Router
+  - Libs
+modifiedDate: '2021-08-28 @ 12:24:49'
 ---
 
 For the longest time, when creating an API with TypeScript/Node.js, I would spend a god awful amount of time finding just the right framework. Recently I decided to pick one and stick with it, so I had to find one to use. I landed on Hapi and used that for quite some time, including projects at my full time job. Eventually, I began to have issues with Hapi in TypeScript so I began poking around for a framework with better TypeScript support. That was when I found Koa, from the makers of Express.
