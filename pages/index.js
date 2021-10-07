@@ -40,13 +40,7 @@ export default function Home({ posts }) {
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No entries found.'}
           {posts.slice(0, MAX_DISPLAY).map(frontMatter => {
-            const {
-              slug,
-              publishDate,
-              title,
-              summary,
-              tags
-            } = frontMatter
+            const { slug, publishDate, title, summary, tags } = frontMatter
             return (
               <li key={slug} className="py-12">
                 <article>

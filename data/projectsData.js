@@ -16,7 +16,8 @@ export default [
   },
   {
     title: 'Open Source Code',
-    description: 'I started a GitHub account back in college and have published nearly every project I\'ve ever done since. As a result, I\'ve got a fairly large amount of repositories of code available to anyone.',
+    description:
+      "I started a GitHub account back in college and have published nearly every project I've ever done since. As a result, I've got a fairly large amount of repositories of code available to anyone.",
     imgSrc: 'https://images.4lch4.cloud/projects/github-green.svg',
     href: 'https://github.com/4lch4'
   }
