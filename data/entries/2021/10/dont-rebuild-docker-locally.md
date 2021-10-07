@@ -4,10 +4,10 @@ summary: |
   Instead of rebuilding your Docker image every time you make a change, it's much faster to mount your local directory to the image and then restart it.
 images:
   - /static/images/posts/Faster-Docker-Development/Header-0.jpeg
-createdDate: '2021-10-05 @ 12:10:28'
-modifiedDate: '2021-10-05 @ 12:17:59'
-date: '2021-10-06T14:42:12Z'
-publishDate: '2021-10-06T14:42:12Z'
+createdDate: '2021-10-05T10:58:18.000-05:00'
+modifiedDate: '2021-10-06T10:57:59.000-05:00'
+publishDate: '2021-10-06T09:42:12.000-05:00'
+fileName: '2021/10/dont-rebuild-docker-locally.md'
 author: 4lch4
 slug: dont-rebuild-docker-locally
 tags:
