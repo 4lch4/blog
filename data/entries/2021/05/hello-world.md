@@ -4,6 +4,7 @@ publishDate: '2021-05-15T00:09:38Z'
 tags: ['first']
 draft: false
 summary: The first blog post of this new blog site.
+fileName: hello-world.md
 images: ['/static/images/posts/Hello-World.jpg']
 ---
 

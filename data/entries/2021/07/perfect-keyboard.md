@@ -6,6 +6,7 @@ images:
   - /static/images/posts/Moonlander/moonlander-logo.png
 publishDate: '2021-07-04T10:03:01Z'
 author: 4lch4
+fileName: 'perfect-keyboard.md'
 tags:
   - ZSA
   - Keyboards

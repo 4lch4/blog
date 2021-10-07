@@ -9,7 +9,6 @@
     "build": "next build && node ./scripts/generate-sitemap",
     "serve": "next start",
     "analyze": "env ANALYZE=true next build",
-    "prepare": "husky install",
     "pretty": "prettier --write **"
   },
   "dependencies": {

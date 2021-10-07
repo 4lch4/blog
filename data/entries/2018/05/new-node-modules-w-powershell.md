@@ -1,5 +1,6 @@
 ---
 title: New Node Modules w/ PowerShell
+fileName: new-node-modules-w-powershell.md
 publishDate: '2018-05-25'
 tags: ['PowerShell', 'Node.js', 'JavaScript']
 summary: Initializing a new Node module using PowerShell.

@@ -3,6 +3,7 @@ title: Solving the FizzBuzz Problem in PowerShell
 publishDate: '2018-08-07'
 tags: ['PowerShell', 'Tips', 'Interviews', 'FizzBuzz']
 summary: A simple solution to the standard Fizz Buzz interview question.
+fileName: solving-the-fizzbuzz-problem-in-powershell.md
 images: ['/static/images/posts/FizzBuzz.png']
 ---
 
