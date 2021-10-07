@@ -5,8 +5,18 @@ import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 
-const editUrl = fileName =>
-  `${siteMetadata.siteRepo}/blob/master/data/entries/${fileName}`
+
+const editUrlDate = publishDate => {
+  const date = new Date(publishDate).toLocaleDateString(siteMetadata.locale, {
+    year: 'numeric',
+    month: '2-digit'
+  })
+
+  return `${date.substring(date.indexOf('/') + 1)}/${date.substring(0, 2)}`
+}
+
+const editUrl = (fileName, publishDate) =>
+  `${siteMetadata.siteRepo}/blob/master/data/entries/${editUrlDate(publishDate)}/${fileName}`
 const discussUrl = slug =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `${siteMetadata.siteUrl}/entries/${slug}`
@@ -98,7 +108,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                <Link href={editUrl(fileName, publishDate)}>{'View on GitHub'}</Link>
               </div>
             </div>
             <footer>

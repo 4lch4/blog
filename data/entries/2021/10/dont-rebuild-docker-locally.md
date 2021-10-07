@@ -7,7 +7,7 @@ images:
 createdDate: '2021-10-05T10:58:18.000-05:00'
 modifiedDate: '2021-10-06T10:57:59.000-05:00'
 publishDate: '2021-10-06T09:42:12.000-05:00'
-fileName: '2021/10/dont-rebuild-docker-locally.md'
+fileName: 'dont-rebuild-docker-locally.md'
 author: 4lch4
 slug: dont-rebuild-docker-locally
 tags:
