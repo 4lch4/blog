@@ -16,7 +16,7 @@ const editUrlDate = publishDate => {
 }
 
 const editUrl = (fileName, publishDate) =>
-  `${siteMetadata.siteRepo}/blob/master/data/entries/${editUrlDate(publishDate)}/${fileName}`
+  `${siteMetadata.siteRepo}/blob/main/data/entries/${editUrlDate(publishDate)}/${fileName}`
 const discussUrl = slug =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `${siteMetadata.siteUrl}/entries/${slug}`
