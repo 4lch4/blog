@@ -15,6 +15,12 @@ export default function App({ Component, pageProps }) {
       <MDXProvider components={MDXComponents}>
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
+          <script
+            async
+            src="https://ackee.4lch4.cloud/tracker.js"
+            data-ackee-server="https://ackee.4lch4.cloud"
+            data-ackee-domain-id="788ca507-58b0-4e6f-9644-cd848320c71d"
+          ></script>
         </Head>
         <DefaultSeo {...SEO} />
         <LayoutWrapper>
