@@ -1,8 +1,10 @@
 ---
 title: How My Website Was Hacked
 summary: 'How someone took over my unused domain name w/ GitHub Pages.'
+images:
+  - https://assets.4lch4.cloud/projects/blog/Hacker-Man-0.jpeg
 createdDate: '2022-02-01T09:55:00-06:00'
-modifiedDate: '2022-02-14T14:54:12-06:00'
+modifiedDate: '2022-07-25T11:40:31-06:00'
 publishDate: '2022-02-14T14:54:12-06:00'
 author: 4lch4
 slug: how-my-website-was-hacked
@@ -26,11 +28,11 @@ I use the word hack, hacked, or hacker quite a bit throughout this post but what
 
 _Relevant XKCD:_
 
-[![XKCD-932](https://imgs.xkcd.com/comics/cia.png)](https://xkcd.com/932/)
+[![XKCD-932][XKCD-Comic-Img]][XKCD-Comic-URL]
 
 ### Defacing/Defacer
 
-> **Website defacement** is an attack on a website that changes the visual appearance of a [website](https://en.wikipedia.org/wiki/Website "Website") or a [web page](https://en.wikipedia.org/wiki/Web_page "Web page").
+> **Website defacement** is an attack on a website that changes the visual appearance of a [website][7] or a [web page][6].
 
 Aside from the basic definition above, from Wikipedia, I think what happened is best described with the above XKCD comic. There are a wide variety of ways to make it look like a website was "hacked" when in reality it was just defaced, and none of the actual infrastructure involved in hosting the site was touched.
 
@@ -38,7 +40,7 @@ Aside from the basic definition above, from Wikipedia, I think what happened is 
 
 On January 29th, 2022, I decided to update one of my simple websites (4lch4.social) that provides links to my various social media accounts. When I pulled up the site, I was greeted with a lovely message that I had been hacked:
 
-![4lch4.social-Hacked-0.png](../../../../public/static/images/posts/4lch4.social/4lch4.social-Hacked-0.png)
+![4lch4.social-Hacked-0.png][4lch4.social-Hacked-0]
 
 ## Digging In
 
@@ -46,7 +48,7 @@ So, I decided to dig in and figure out how they'd done this. At first I checked 
 
 Initially, I wanted to find out as much as I could about the individual "X'Boy Linux" and see what other stuff they'd done. I dropped their name into [a Google search][1] and started going through the results:
 
-![4lch4.social-Hacked-1.png](../../../../public/static/images/posts/4lch4.social/4lch4.social-Hacked-1.png)
+![4lch4.social-Hacked-1.png][4lch4.social-Hacked-1]
 
 The first few were a Facebook with no real useful information, a profile on a defacer site, a few hacked sites, and then a [YouTube channel][2]. I opened the YouTube channel and the video that it shows off is a YouTube story where they're showing off hacking a site. They do this by hosting a website using GitHub pages with the victim domain name in a `CNAME` file. While watching it, I realized they left [the username of the GitHub account][3] they used in the video.
 
@@ -64,3 +66,11 @@ After opening a ticket, I got a reply within a few hours from a bot that verifie
 [3]: https://github.com/CYBERANONYMOUS1
 [4]: https://github.com/CYBERANONYMOUS1/didi
 [5]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
+[6]: https://en.wikipedia.org/wiki/Web_page
+[7]: https://en.wikipedia.org/wiki/Website
+
+[4lch4.social-Hacked-0]: https://assets.4lch4.cloud/projects/blog/4lch4.social/4lch4.social-Hacked-0.png
+[4lch4.social-Hacked-1]: https://assets.4lch4.cloud/projects/blog/4lch4.social/4lch4.social-Hacked-1.png
+
+[XKCD-Comic-Img]: https://imgs.xkcd.com/comics/cia.png
+[XKCD-Comic-URL]: https://xkcd.com/932/
