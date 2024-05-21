@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repo has been archived as I've moved all of my blog content to my [homepage](https://4lch4.com) and have no plans to bring it back online.
+
 ![Tailwind-Banner](/public/static/images/readme-hero.jpg)
 
 _Photo by [Thought Catalog][0] on [Unsplash][1]_
